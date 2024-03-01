@@ -1,0 +1,13 @@
+<Window x:Class="ExcelToSqlServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Excel to SQL Server Importer" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <Button x:Name="btnBrowse" Content="Browse Excel File" Click="btnBrowse_Click" />
+            <TextBlock Text="Selected File:" Margin="0 10 0 5" />
+            <TextBox x:Name="txtFilePath" IsReadOnly="True" Margin="0 0 0 5" />
+            <Button x:Name="btnImport" Content="Import Data" Click="btnImport_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
